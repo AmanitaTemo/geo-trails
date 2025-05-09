@@ -22,7 +22,7 @@ const Index = () => {
     <Layout>
       {/* Hero section */}
       <section className="relative bg-cover bg-center h-[80vh] flex items-center" style={{ 
-        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Svaneti.jpg')" 
+        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Svaneti.jpg')"
       }}>
         <div className="container mx-auto text-center text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">
