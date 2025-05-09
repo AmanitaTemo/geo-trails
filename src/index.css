@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 140 5% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 5% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 5% 15%;
+
+    --primary: 142 43% 42%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 60 33% 96%;
+    --secondary-foreground: 140 5% 15%;
+
+    --muted: 60 33% 96%;
+    --muted-foreground: 140 5% 40%;
+
+    --accent: 36 40% 70%;
+    --accent-foreground: 140 5% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 5% 90%;
+    --input: 140 5% 90%;
+    --ring: 142 43% 42%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 140 10% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 140 10% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 140 10% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 142 43% 42%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 140 10% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 140 10% 20%;
+    --muted-foreground: 140 5% 65%;
+
+    --accent: 36 40% 40%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 10% 20%;
+    --input: 140 10% 20%;
+    --ring: 142 43% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  .container {
+    @apply px-4 md:px-6;
+  }
+}
+
+.tour-card-image {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.tour-detail-image {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.5rem;
+}
