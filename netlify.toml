@@ -1,7 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "https://service.prerender.io/:splat"
-  status = 200
-  force = true
-  conditions = { Role = "bot" }
-
