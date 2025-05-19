@@ -1,0 +1,5 @@
+[[plugins]]
+  package = "netlify-plugin-prerender"
+
+  [plugins.inputs]
+  prerenderToken = PKeY8gaFoVrX2Gl5CwQf
